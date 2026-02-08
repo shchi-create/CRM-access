@@ -5,3 +5,4 @@ builder = "DOCKERFILE"
 numReplicas = 1
 healthcheckPath = "/api"
 restartPolicyType = "ON_FAILURE"
+startCommand = "bash start.sh"
