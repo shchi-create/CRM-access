@@ -10,6 +10,11 @@ from app.security import check_api_key, is_allowed_user, rate_limiter
 router = APIRouter()
 
 
+@router.get("/health")
+async def healthcheck():
+    return {"status": "ok"}
+
+
 @router.post("/api")
 async def handle_api(request: Request, payload: ApiRequest):
     logger = get_logger("api")
