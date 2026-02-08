@@ -3,6 +3,6 @@ builder = "DOCKERFILE"
 
 [deploy]
 numReplicas = 1
-healthcheckPath = "/health"
+healthcheckPath = "/api"
 restartPolicyType = "ON_FAILURE"
 startCommand = "bash start.sh"
